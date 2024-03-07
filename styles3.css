@@ -179,6 +179,21 @@ footer {
   color: #ea4848;
 }
 
+#category-dropdown-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+#category-dropdown {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-decoration: underline 2px;
+}
+
 #menu-pics {
   display: flex;
   gap: 40px;
@@ -264,28 +279,52 @@ p.price {
   }
 
   #food {
-    padding-left: 20px;
+    padding: 15px;
+    text-align: center;
   }
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
+
+  #menu-pics {
+    gap: 10px;
+    /* justify-content: center; */
+    display: inline-grid;
+    grid-template-columns: auto auto;
+  }
+
   .menu-card {
     /* background-color: rgb(208, 184, 173); */
-    width: 170px;
+    width: 160px;
+
     height: auto;
+    p {
+      font-size: 1rem;
+    }
   }
 
   .menu-card-no-pic {
-    width: 170px;
+    width: 160px;
     height: auto;
+    p {
+      font-size: 1rem;
+    }
   }
 
   .img-container {
-    width: 170px;
+    width: 160px;
     height: auto;
+  }
+
+  #menu-container {
+    height: 11rem;
+  }
+
+  #logo {
+    width: 100px;
   }
 }
 
@@ -305,5 +344,9 @@ p.price {
 
   #food {
     padding-left: 50px;
+  }
+
+  #category-dropdown-container {
+    display: none;
   }
 }
