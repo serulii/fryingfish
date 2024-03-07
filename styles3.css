@@ -47,6 +47,17 @@ footer {
   }
 }
 
+#logo {
+  width: 120px;
+}
+
+#logo-container {
+  z-index: 9999;
+  position: fixed;
+  left: 10%;
+  transform: translateX(-15%);
+}
+
 #navbar {
   background-color: #262020;
   display: flex;
@@ -74,13 +85,16 @@ footer {
 .navbar-menu {
   display: flex;
   flex-direction: row;
-  margin-left: 50px;
+  margin-left: 17%;
   margin-right: 0px;
   padding-right: 30px;
   list-style: none;
-  column-gap: 60px;
+  column-gap: 5vw;
   font-weight: 200;
+  align-items: center;
   width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   li {
     float: left;
@@ -88,11 +102,12 @@ footer {
 }
 
 .navbar-menu-right {
+  align-items: center;
   margin: auto;
   margin-right: 0;
   float: right;
   display: flex;
-  column-gap: 60px;
+  column-gap: 5vw;
 }
 
 .navbar-item {
@@ -104,6 +119,9 @@ footer {
 
 #reserve-button {
   color: #ea4848;
+  padding: 4px 12px;
+  border: 1.5px solid #ea4848;
+  border-radius: 15px;
 }
 
 #menu-container {
@@ -128,9 +146,9 @@ footer {
   display: flex;
   /* align-items: center; */
   justify-content: center;
-  gap: 2rem;
+  gap: 1vw;
   overflow: hidden;
-  height: 40rem;
+  height: 75vh;
   margin-bottom: 7rem;
 }
 
@@ -143,8 +161,10 @@ footer {
 }
 
 #sidebar {
-  padding-left: 3rem;
+  padding-left: 1rem;
+  padding-right: 3rem;
   width: 20rem;
+  overflow: scroll;
 }
 
 #categories {
@@ -220,4 +240,38 @@ footer {
 
 p.price {
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar-menu {
+    display: none; /* Hide regular navbar on smaller screens */
+  }
+  #navbar {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex; /* Show hamburger menu on smaller screens */
+    background-color: #262020;
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+  }
+
+  #hamburger-icon {
+    color: #fdfdfd;
+    font-size: 50px;
+    margin: 0;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  /* Add styles for the hamburger menu icon and behavior */
+  .hamburger-menu {
+    display: none;
+    margin-right: 20px;
+  }
 }
