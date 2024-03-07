@@ -12,6 +12,9 @@ html {
 body {
   background-color: #fdfdfd;
   margin: 0;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1 {
@@ -26,6 +29,22 @@ h2 {
   font-family: "Hammersmith One", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #6b0d0d;
+  margin: 0;
+  height: 10rem;
+  /* position: static; */
+
+  p {
+    color: #fdfdfd;
+    text-align: center;
+  }
 }
 
 #navbar {
@@ -88,19 +107,32 @@ h2 {
 
 #main-content {
   width: 100%;
-  min-height: 40rem;
+  /* min-height: 40rem; */
   display: flex;
   /* align-items: center; */
   justify-content: center;
   gap: 5rem;
+  overflow: hidden;
+  height: 40rem;
+  margin-bottom: 7rem;
 }
 
 #food {
-  width: 50rem;
+  padding-left: 50px;
+  width: 60rem;
+  height: auto;
+  overflow-y: auto;
+  /* padding-left: 5rem; */
 }
 
 #sidebar {
+  padding-left: 20px;
   width: 20rem;
+}
+
+#categories {
+  padding: 0;
+  line-height: 2.2rem;
 }
 
 #category-text {
@@ -108,4 +140,18 @@ h2 {
 }
 
 .category-item {
+  list-style-type: none;
+  font-size: 1.375rem;
+}
+
+#menu-pics {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.menu-card {
+  background-color: rgb(208, 184, 173);
+  width: 200px;
+  height: 300px;
 }
