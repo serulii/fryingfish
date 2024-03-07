@@ -74,12 +74,25 @@ footer {
 .navbar-menu {
   display: flex;
   flex-direction: row;
-  margin-left: auto;
+  margin-left: 50px;
   margin-right: 0px;
   padding-right: 30px;
   list-style: none;
-  column-gap: 40px;
+  column-gap: 60px;
   font-weight: 200;
+  width: 90%;
+
+  li {
+    float: left;
+  }
+}
+
+.navbar-menu-right {
+  margin: auto;
+  margin-right: 0;
+  float: right;
+  display: flex;
+  column-gap: 60px;
 }
 
 .navbar-item {
@@ -87,6 +100,10 @@ footer {
   font-family: "Hammersmith One", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+#reserve-button {
+  color: #ea4848;
 }
 
 #menu-container {
@@ -111,7 +128,7 @@ footer {
   display: flex;
   /* align-items: center; */
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
   overflow: hidden;
   height: 40rem;
   margin-bottom: 7rem;
@@ -119,14 +136,14 @@ footer {
 
 #food {
   padding-left: 50px;
-  width: 60rem;
+  width: 70rem;
   height: auto;
   overflow-y: auto;
   /* padding-left: 5rem; */
 }
 
 #sidebar {
-  padding-left: 20px;
+  padding-left: 3rem;
   width: 20rem;
 }
 
@@ -144,14 +161,63 @@ footer {
   font-size: 1.375rem;
 }
 
+.category-item-active {
+  list-style-type: none;
+  font-size: 1.375rem;
+  color: #ea4848;
+}
+
 #menu-pics {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   flex-wrap: wrap;
+  row-gap: 40px;
 }
 
 .menu-card {
-  background-color: rgb(208, 184, 173);
-  width: 200px;
+  /* background-color: rgb(208, 184, 173); */
+  width: 230px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  img {
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+  }
+
+  p {
+    line-height: normal;
+    font-size: 1.2rem;
+    margin: 0.3rem;
+    margin-left: 0;
+  }
+}
+
+.img-container {
+  width: 230px;
   height: 300px;
+  object-fit: contain;
+  padding-bottom: 10px;
+}
+
+.menu-card-no-pic {
+  width: 230px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  p {
+    line-height: normal;
+    font-size: 1.2rem;
+    margin: 0.3rem;
+    margin-left: 0;
+  }
+}
+
+p.price {
+  font-size: 1rem;
 }

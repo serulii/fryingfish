@@ -28,8 +28,10 @@
         <li class="navbar-item">Menu</li>
         <li class="navbar-item">About</li>
         <li class="navbar-item">Contact</li>
-        <li class="navbar-item">Delivery</li>
-        <li class="navbar-item">Reserve</li>
+        <div class="navbar-menu-right">
+          <li class="navbar-item">Delivery</li>
+          <li class="navbar-item" id="reserve-button">Reserve</li>
+        </div>
       </ul>
     </nav>
     <div id="main">
@@ -38,25 +40,313 @@
       </div>
       <div id="main-content">
         <div id="food">
-          <h2>New Dishes</h2>
+          <h2>House Special Chili Dishes</h2>
           <div id="menu-pics">
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
-            <div class="menu-card"></div>
+            <div class="menu-card">
+              <img
+                src="img/chili_1.webp"
+                alt="Image of Pork Ribs with Chili Peppers"
+              />
+              <div class="menu-subtitle">
+                <p>Pork Ribs w. Chili Peppers</p>
+                <p>​干锅香辣排骨</p>
+                <p class="price">$20.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="img/chili_2.webp"
+                alt="Image of Beef with Chili Peppers"
+              />
+              <div class="menu-subtitle">
+                <p>Beef w. Chili Pepper</p>
+                <p>​干锅香辣牛肉</p>
+                <p class="price">$21.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="img/chili_3.webp"
+                alt="Image of Pork Leg with Spicy Peppers"
+              />
+              <div class="menu-subtitle">
+                <p>Pork Leg w. Spicy Peppers</p>
+                <p>沸腾香辣爆肘</p>
+                <p class="price">$26.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img
+                src="img/chili_4.webp"
+                alt="Image of Frog Leg with Chili Peppers"
+              />
+              <div class="menu-subtitle">
+                <p>Frog Leg w. Chili Peppers</p>
+                <p>干锅香辣牛蛙</p>
+                <p class="price">$23.95</p>
+              </div>
+            </div>
+            <div class="menu-card-no-pic">
+              <div class="menu-subtitle">
+                <p>Pork Intestine w. Chili Peppers</p>
+                <p>​干锅香辣肥肠</p>
+                <p class="price">$20.95</p>
+              </div>
+            </div>
+            <div class="menu-card-no-pic">
+              <div class="menu-subtitle">
+                <p>Pork Knuckles w. Chili Peppers</p>
+                <p>​干锅香辣猪手</p>
+                <p class="price">$20.95</p>
+              </div>
+            </div>
+            <div class="menu-card-no-pic">
+              <div class="menu-subtitle">
+                <p>Sole Fish w. Chili Peppers</p>
+                <p>干锅香辣鱼片</p>
+                <p class="price">$22.95</p>
+              </div>
+            </div>
+            <div class="menu-card-no-pic">
+              <div class="menu-subtitle">
+                <p>Prawn w. Chili Peppers</p>
+                <p>干锅香辣虾</p>
+                <p class="price">$22.95</p>
+              </div>
+            </div>
+            <div class="menu-card-no-pic">
+              <div class="menu-subtitle">
+                <p>Cauliflower w. Chili Peppers</p>
+                <p>​干锅花菜</p>
+                <p class="price">$20.95</p>
+              </div>
+            </div>
+          </div>
+          <h2>Appetizers</h2>
+          <div id="menu-pics">
+            <div class="menu-card">
+              <img
+                src="img/appetizer_1.webp"
+                alt="Image of green onion pancakes"
+              />
+              <div class="menu-subtitle">
+                <p>Green Onion Pancakes</p>
+                <p>葱油饼​</p>
+                <p class="price">$6.95</p>
+              </div>
+            </div>
+            <div class="menu-card-no-pic">
+              <div class="menu-subtitle">
+                <p>Vegetable Egg Roll (3)</p>
+                <p>素春卷 (3)</p>
+                <p class="price">$4.95</p>
+              </div>
+            </div>
+            <div class="menu-card-no-pic">
+              <div class="menu-subtitle">
+                <p>Pork & Vegetable Pot Stickers (6)</p>
+                <p>锅贴 (6)</p>
+                <p class="price"></p>
+              </div>
+            </div>
+            <div class="menu-card-no-pic">
+              <div class="menu-subtitle">
+                <p>Spicy & Sour Dumpling</p>
+                <p>​酸辣抄手</p>
+                <p class="price">$9.95</p>
+              </div>
+            </div>
+            <div class="menu-card-no-pic">
+              <div class="menu-subtitle">
+                <p>Spicy Chicken Wings (Sichuan Style)</p>
+                <p>香辣鸡翅</p>
+                <p class="price">$12.95</p>
+              </div>
+            </div>
+          </div>
+          <h2>Cold Appetizers</h2>
+          <div id="menu-pics">
+            <div class="menu-card">
+              <img src="img/cold_appetizer_1.webp" alt="" />
+              <div class="menu-subtitle">
+                <p>Chicken Feet w. Pickled Chili</p>
+                <p>泡椒凤爪</p>
+                <p class="price">$10.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="img/cold_appetizer_2.webp" alt="" />
+              <div class="menu-subtitle">
+                <p>FuChi(Assorted) Beef</p>
+                <p>夫妻肺片</p>
+                <p class="price">$14.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <img src="img/cold_appetizer_3.webp" alt="" />
+              <div class="menu-subtitle">
+                <p>Dry Bean Curd w. Celery</p>
+                <p>西芹香干</p>
+                <p class="price">$11.95</p>
+              </div>
+            </div>
+            <div class="menu-card-no-pic">
+              <div class="menu-subtitle">
+                <p>Bamboo Shoots</p>
+                <p>香油笋尖​</p>
+                <p class="price">$10.95</p>
+              </div>
+            </div>
+            <div class="menu-card-no-pic">
+              <div class="menu-subtitle">
+                <p>Sichuan Bean Jelly</p>
+                <p>​川北凉粉</p>
+                <p class="price">$10.95</p>
+              </div>
+            </div>
+            <div class="menu-card-no-pic">
+              <div class="menu-subtitle">
+                <p>Spicy Chili Beef, Sichuan Style</p>
+                <p>麻辣牛肉干</p>
+                <p class="price">$16.95</p>
+              </div>
+            </div>
+          </div>
+          <h2>Vegetables & Tofu</h2>
+          <div id="menu-pics">
+            <div class="menu-card">
+              <div class="img-container">
+                <img src="img/veg_1.webp" alt="Image of corn with pine nuts." />
+              </div>
+              <div class="menu-subtitle">
+                <p>Corn w. Pine Nuts</p>
+                <p>松子玉米</p>
+                <p class="price">$12.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="img-container">
+                <img
+                  src="img/veg_2.webp"
+                  alt="Image of dry cooked string beans."
+                />
+              </div>
+              <div class="menu-subtitle">
+                <p>Dry Cooked String Beans</p>
+                <p>干煸四季豆</p>
+                <p class="price">$15.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="img-container">
+                <img
+                  src="img/veg_3.webp"
+                  alt="Image of eggplant with hot garlic or basil."
+                />
+              </div>
+              <div class="menu-subtitle">
+                <p>Eggplant w. Hot Garlic Sauce or Basil</p>
+                <p>​鱼香/九层塔茄子</p>
+                <p class="price">$14.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="img-container">
+                <img src="img/veg_4.webp" alt="Image of green chili peppers." />
+              </div>
+              <div class="menu-subtitle">
+                <p>Green Chili Peppers</p>
+                <p>​虎皮尖椒</p>
+                <p class="price">$15.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="img-container">
+                <img
+                  src="img/veg_5.webp"
+                  alt="Image of Water Spinach with Garlic."
+                />
+              </div>
+              <div class="menu-subtitle">
+                <p>Water Spinach w. Garlic</p>
+                <p>蒜蓉空心菜</p>
+                <p class="price">$16.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="img-container">
+                <img
+                  src="img/veg_6.webp"
+                  alt="Image of pea vine with garlic."
+                />
+              </div>
+              <div class="menu-subtitle">
+                <p>Pea Vine w. Garlic</p>
+                <p>蒜蓉豆苗</p>
+                <p class="price">$17.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="img-container">
+                <img
+                  src="img/veg_7.webp"
+                  alt="Image of home style sauted tofu."
+                />
+              </div>
+              <div class="menu-subtitle">
+                <p>Home Style Sauted Tofu</p>
+                <p>家常豆腐</p>
+                <p class="price">$14.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="img-container">
+                <img
+                  src="img/veg_8.webp"
+                  alt="Image of picked veggies with lotus root."
+                />
+              </div>
+              <div class="menu-subtitle">
+                <p>Pickled Veggies w. Lotus Root</p>
+                <p>泡菜藕片</p>
+                <p class="price">$14.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="img-container">
+                <img
+                  src="img/veg_9.webp"
+                  alt="Image of deep fried tofu (Sichuan style)."
+                />
+              </div>
+              <div class="menu-subtitle">
+                <p>Deep Fried Tofu (Sichuan Style)</p>
+                <p>香辣豆腐/p></p>
+                <p class="price">$14.95</p>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="img-container">
+                <img
+                  src="img/veg_10.webp"
+                  alt="Image of stir fried tomato with egg."
+                />
+              </div>
+              <div class="menu-subtitle">
+                <p>Stir Fried Tomato w. Egg</p>
+                <p>西红柿炒蛋</p>
+                <p class="price">$14.95</p>
+              </div>
+            </div>
           </div>
         </div>
         <div id="sidebar">
           <h2 id="category-text">Category</h2>
           <ul id="categories">
-            <li class="category-item"><a href="">All</a></li>
+            <li class="category-item-active">All</li>
             <li class="category-item">New Dishes</li>
             <li class="category-item">Live Seafood</li>
-            <li class="category-item">House Special</li>
+            <li class="category-item">House Special Chili Dishes</li>
             <li class="category-item">Appetizers</li>
             <li class="category-item">Cold Appetizers</li>
             <li class="category-item">Vegetables & Tofu</li>
