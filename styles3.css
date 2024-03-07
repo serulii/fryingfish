@@ -153,18 +153,10 @@ footer {
 }
 
 #food {
-  padding-left: 50px;
   width: 70rem;
   height: auto;
   overflow-y: auto;
   /* padding-left: 5rem; */
-}
-
-#sidebar {
-  padding-left: 1rem;
-  padding-right: 3rem;
-  width: 20rem;
-  overflow: scroll;
 }
 
 #categories {
@@ -266,6 +258,35 @@ p.price {
     margin: 0;
     margin-right: 2rem;
   }
+
+  #sidebar {
+    display: none;
+  }
+
+  #food {
+    padding-left: 20px;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .menu-card {
+    /* background-color: rgb(208, 184, 173); */
+    width: 170px;
+    height: auto;
+  }
+
+  .menu-card-no-pic {
+    width: 170px;
+    height: auto;
+  }
+
+  .img-container {
+    width: 170px;
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 700px) {
@@ -273,5 +294,16 @@ p.price {
   .hamburger-menu {
     display: none;
     margin-right: 20px;
+  }
+
+  #sidebar {
+    padding-left: 1rem;
+    padding-right: 3rem;
+    width: 20rem;
+    overflow: scroll;
+  }
+
+  #food {
+    padding-left: 50px;
   }
 }
